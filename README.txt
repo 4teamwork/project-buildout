@@ -67,6 +67,19 @@ in the ``filestorage`` part in ``base.cfg``. This allows easy moving of
 filestorages between Zope instances.
 
 
+ZEO for local development
+-------------------------
+
+For local development it can be useful to have a ZEO server configured, in
+order to be able to boot an instance in debug mode and foreground simultaneously.
+For this purpose a `zeo.cfg` is included from which you can extend like this::
+
+ [buildout]
+ extends =
+     development.cfg
+     zeo.cfg
+
+
 Production Configurations
 -------------------------
 
